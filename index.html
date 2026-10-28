@@ -248,29 +248,30 @@
                 <td>Class 21</td>
                 <td>Mon Nov 2</td>
                 <td>Basics of Causal Techniques</td>
-                <td>—</td>
-                <td>—</td>
+                <td rowspan="4" colspan="2" class="module-cell">
+                  <p class="module-cell-title">Causal Inference Module</p>
+                  <p>
+                    These four classes teach how to use causal inference to interpret the security of a model.
+                    Every session includes in-class activities and quizzes (they count toward Class activities).
+                    Competition Rounds 1&ndash;3 run alongside.
+                  </p>
+                  <a href="#causal-module" class="module-cell-link">Details &rarr;</a>
+                </td>
               </tr>
               <tr>
                 <td>Class 22</td>
                 <td>Wed Nov 4</td>
                 <td>Causal Analysis for Interpreting AI Behaviour</td>
-                <td>—</td>
-                <td>—</td>
               </tr>
               <tr>
                 <td>Class 23</td>
                 <td>Mon Nov 9</td>
                 <td>Lab 1: Causal Effect Estimation</td>
-                <td>—</td>
-                <td>—</td>
               </tr>
               <tr>
                 <td>Class 24</td>
                 <td>Wed Nov 11</td>
                 <td>Lab 2: Causal Discovery</td>
-                <td>—</td>
-                <td>—</td>
               </tr>
               <tr>
                 <td>Class 25</td>
@@ -350,6 +351,36 @@
 
       <section class="panel reveal" id="causal-module">
         <h2>Causal Inference &amp; Code Backdoor Detection Module</h2>
+        <div class="now-block" id="module-now" aria-live="polite">
+          <p class="now-label" id="now-label">This module</p>
+          <div class="now-phase" data-start="2026-10-28T09:00" data-end="2026-11-02T15:00">
+            <p class="now-phase-title">Getting started &amp; Round 1 <span class="now-dates">Wed Oct 28, 9:00 AM &ndash; Mon Nov 2, 3:00 PM</span></p>
+            <div class="chip-row">
+              <a href="#m-consent" class="chip">Consent questionnaire</a>
+              <a href="#m-survey1" class="chip">Survey 1</a>
+              <a href="#m-competition" class="chip chip-locked"><svg class="tag-lock" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><rect x="3" y="7" width="10" height="8" rx="1.5" fill="currentColor"/><path d="M5 7V5a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Competition Round 1 <span class="chip-note">unlocks after Survey 1</span></a>
+              <a href="#m-quizzes" class="chip">Class 1, Mon Nov 2</a>
+            </div>
+          </div>
+          <div class="now-phase" data-start="2026-11-02T15:00" data-end="2026-11-11T17:00">
+            <p class="now-phase-title">Causal classes &amp; Round 2 <span class="now-dates">Mon Nov 2, 3:00 PM &ndash; Wed Nov 11, 5:00 PM</span></p>
+            <div class="chip-row">
+              <a href="#m-quizzes" class="chip">In-class quizzes</a>
+              <a href="#m-competition" class="chip">Round 2 (Nov 4, 5 PM &ndash; Nov 9, 3 PM)</a>
+              <a href="#m-competition" class="chip">Round 2 submission form</a>
+            </div>
+          </div>
+          <div class="now-phase" data-start="2026-11-11T17:00" data-end="2026-11-18T15:00">
+            <p class="now-phase-title">Round 3 &amp; final report <span class="now-dates">Wed Nov 11, 5:00 PM &ndash; Wed Nov 18, 3:00 PM</span></p>
+            <div class="chip-row">
+              <a href="#m-quizzes" class="chip">In-class quiz</a>
+              <a href="#m-competition" class="chip">Round 3</a>
+              <a href="#m-competition" class="chip">Round 3 submission form</a>
+              <a href="#m-report" class="chip">Final report</a>
+            </div>
+          </div>
+        </div>
+
         <p>
           From late October to mid-November, the course runs a module that pairs four classes on
           <strong>causal inference</strong> with a private <strong>Kaggle competition</strong> on detecting
@@ -402,48 +433,75 @@
           </li>
         </ol>
 
-        <div class="grid-two">
-          <article>
-            <h3>What you do</h3>
-            <ul>
-              <li><strong>Four surveys:</strong> Survey 1 (background) plus the submission form at the end of each of the three rounds.</li>
-              <li><strong>Three competition rounds</strong> on Kaggle, detecting poisoned training samples in code models.</li>
-              <li><strong>In-class quizzes</strong> during the classes. Quizzes can only be taken in class.</li>
-              <li><strong>A final report</strong> at the end of the module.</li>
-              <li>
-                Use your <strong>study code</strong>, not your name or Unity ID, on the surveys, on your competition
-                submissions (as your Kaggle team name), and on the quizzes.
-              </li>
-            </ul>
+        <h3>What you do</h3>
+        <div class="step-grid">
+          <article class="step-card" id="m-consent">
+            <h4>Consent questionnaire</h4>
+            <p>
+              One short consent questionnaire. The link is the same for everyone and is in the email from
+              TA Hua Yang. Answer it by <strong>Mon Nov 2, before class</strong>.
+            </p>
           </article>
-          <article>
-            <h3>Grading</h3>
+          <article class="step-card" id="m-survey1">
+            <h4>Survey 1</h4>
+            <p>About 10 minutes. The Kaggle invitation link is at the end of the survey.</p>
+            <p>[<a href="https://qualtricsxmsnkkt56xw.pdx1.qualtrics.com/jfe/form/SV_bKrE97avWVNULQy" target="_blank" rel="noopener noreferrer">Open Survey 1</a>]</p>
+          </article>
+          <article class="step-card" id="m-competition">
+            <h4>Kaggle competition</h4>
+            <p>Detect poisoned training samples (backdoors) in code models, in three rounds:</p>
             <ul>
-              <li>
-                <strong>Class activities or seminar participation (20%):</strong> this module counts here, 20 points in total:
-                <ul>
-                  <li>In-class quizzes: 4 &times; 2 points = 8 points</li>
-                  <li>Competition rounds: 3 &times; 3 points = 9 points</li>
-                  <li>Final report: 3 points</li>
-                </ul>
-              </li>
-              <li>
-                Your grade for each competition round reflects both your leaderboard results and your participation
-                throughout the round (valid submissions during the round and its submission form). Quizzes are graded
-                on both your answers and your participation.
-              </li>
+              <li>Round 1: Wed Oct 28, 9:00 AM &ndash; Mon Nov 2, 3:00 PM</li>
+              <li>Round 2: Wed Nov 4, 5:00 PM &ndash; Mon Nov 9, 3:00 PM</li>
+              <li>Round 3: Wed Nov 11, 5:00 PM &ndash; Wed Nov 18, 3:00 PM</li>
             </ul>
+            <p>
+              <strong>Complete Survey 1 to get the invitation link.</strong> Each round ends with a short
+              submission form. Set your Kaggle team name to your study code.
+            </p>
+          </article>
+          <article class="step-card" id="m-quizzes">
+            <h4>In-class quizzes</h4>
+            <p>Quizzes during the four causal inference classes. They can only be taken in class.</p>
+          </article>
+          <article class="step-card" id="m-report">
+            <h4>Final report</h4>
+            <p>A final report at the end of the module. Due date to be announced.</p>
           </article>
         </div>
+        <p class="study-code-reminder">
+          Use your <strong>study code</strong>, not your name or Unity ID, on the surveys, on the quizzes, and as
+          your Kaggle team name.
+        </p>
+
+        <article class="grading">
+          <h3>Grading</h3>
+          <ul>
+            <li>
+              <strong>Class activities or seminar participation (20%):</strong> this module counts here, 20 points in total:
+              <ul>
+                <li>In-class quizzes: 4 &times; 2 points = 8 points</li>
+                <li>Competition rounds: 3 &times; 3 points = 9 points</li>
+                <li>Final report: 3 points</li>
+              </ul>
+            </li>
+            <li>
+              Your grade for each competition round reflects both your leaderboard results and your participation
+              throughout the round (valid submissions during the round and its submission form). Quizzes are graded
+              on both your answers and your participation.
+            </li>
+          </ul>
+        </article>
 
         <div class="note">
           <h3>Research study</h3>
           <p>
-            This module is also part of a research study under NC State IRB protocol #28604. Every student does all
-            activities as part of the course; each student chooses whether their data may be used. You earn 5 points
-            of extra credit either way: by joining the study, or by recording a 3-minute video introducing one
-            backdoor detection method. The instructor does not know who joined until final grades are posted.
-            Details will come by email.
+            This module is also part of a research study. Every student does all activities as part of the course;
+            each student chooses whether their data may be used. If you join, you earn 5 points of extra credit by
+            completing the study (staying in it through the end of the module), and you receive a summary of the
+            findings. If you do not join, or withdraw before the end, you can earn the 5 points by recording a
+            3-minute video introducing one backdoor detection method. The instructor does not know who joined until
+            final grades are posted. Details will come by email.
           </p>
         </div>
 
@@ -492,6 +550,41 @@
                 : "Now: " + items[currentIndex].querySelector(".timeline-title").textContent;
               status.hidden = false;
             }
+          })();
+        </script>
+        <script>
+          (function () {
+            var box = document.getElementById("module-now");
+            if (!box || !window.Intl) return;
+            var parts = {};
+            new Intl.DateTimeFormat("en-US", {
+              timeZone: "America/New_York",
+              year: "numeric", month: "2-digit", day: "2-digit",
+              hour: "2-digit", minute: "2-digit", hourCycle: "h23"
+            }).formatToParts(new Date()).forEach(function (p) { parts[p.type] = p.value; });
+            var now = parts.year + "-" + parts.month + "-" + parts.day + "T" + parts.hour + ":" + parts.minute;
+            var phases = box.querySelectorAll(".now-phase");
+            if (!phases.length) return;
+            var label = document.getElementById("now-label");
+            var first = phases[0].getAttribute("data-start");
+            var end = phases[phases.length - 1].getAttribute("data-end");
+            var active = -1;
+            var text;
+            if (now < first) {
+              // Before the module starts: preview the first phase.
+              active = 0;
+              text = "Starts Wed Oct 28, 9:00 AM";
+            } else if (now >= end) {
+              text = "Module complete";
+            } else {
+              for (var i = 0; i < phases.length; i++) {
+                if (phases[i].getAttribute("data-start") <= now && now < phases[i].getAttribute("data-end")) active = i;
+              }
+              text = "Now / This week";
+            }
+            for (var j = 0; j < phases.length; j++) phases[j].hidden = j !== active;
+            if (label) label.textContent = text;
+            box.classList.add(active === -1 ? "is-complete" : "is-live");
           })();
         </script>
       </section>

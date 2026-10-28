@@ -421,3 +421,134 @@ th {
 .note h3 {
   margin-bottom: 0.25rem;
 }
+
+/* Outline: merged module cell */
+td.module-cell {
+  vertical-align: middle;
+  background: rgba(255, 107, 53, 0.06);
+  border-left: 3px solid var(--brand-2);
+}
+
+.module-cell p {
+  margin: 0 0 0.4rem;
+}
+
+.module-cell-title {
+  font-weight: 700;
+  color: var(--brand);
+}
+
+.module-cell-link {
+  font-weight: 600;
+  color: var(--brand);
+}
+
+/* Module: "Now / This week" block */
+.now-block {
+  margin: 0.5rem 0 1.25rem;
+  padding: 0.75rem 1rem 1rem;
+  border: 1px solid rgba(255, 107, 53, 0.45);
+  border-radius: 12px;
+  background: rgba(255, 107, 53, 0.06);
+}
+
+.now-label {
+  display: inline-block;
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: var(--brand-2);
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+}
+
+.now-block.is-complete .now-label {
+  background: var(--muted);
+}
+
+.now-phase + .now-phase {
+  margin-top: 0.85rem;
+}
+
+.now-phase-title {
+  margin: 0 0 0.45rem;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.6rem;
+}
+
+.now-dates {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.chip-locked {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.tag-lock {
+  flex: none;
+}
+
+.chip-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* Module: step cards */
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.step-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  background: var(--paper);
+  scroll-margin-top: 1rem;
+}
+
+.step-card:target {
+  border-color: var(--brand-2);
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.2);
+}
+
+.step-card h4 {
+  font-family: "Source Serif 4", Georgia, serif;
+  margin: 0 0 0.35rem;
+  color: var(--brand);
+}
+
+.step-card p,
+.step-card ul {
+  margin: 0.35rem 0;
+}
+
+.step-card ul {
+  padding-left: 1.2rem;
+}
+
+.study-code-reminder {
+  margin: 1rem 0 0;
+  padding: 0.5rem 0.75rem;
+  border-left: 4px solid var(--brand-2);
+  background: rgba(255, 107, 53, 0.06);
+  border-radius: 0 12px 12px 0;
+}
+
+@media (max-width: 760px) {
+  .step-grid {
+    grid-template-columns: 1fr;
+  }
+}
